@@ -1,0 +1,9 @@
+import calendar
+
+month, date, year = input().split()
+month = int(month)
+date = int(date)
+year = int(year)
+n = calendar.weekday(year,month,date)
+d = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+print(d[n])
